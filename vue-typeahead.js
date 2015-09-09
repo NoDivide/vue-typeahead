@@ -76,7 +76,6 @@ Vue.component('typeahead', {
 
     reset: function () {
       this.items = []
-      this.query = ''
       this.loading = false
     },
 
