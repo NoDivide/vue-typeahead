@@ -21,6 +21,9 @@ Vue.component('typeahead', {
     src: {
       type: String,
       required: true
+    },
+    query: {
+      type: String
     }
   },
 
