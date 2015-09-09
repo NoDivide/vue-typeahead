@@ -63,7 +63,7 @@ Vue.component('typeahead', {
 
       this.loading = true
 
-      this.$http.get(this.src, Object.assign({q:this.query}, this.data))
+      this.$http.get(this.src, {q:this.query})
         .success(function (data) {
           if (this.query) {
             data = this.prepareData ? this.prepareData(data) : data
